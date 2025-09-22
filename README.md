@@ -5,7 +5,6 @@
 Compile the Fortran source code using the makefile:
 
 ```bash
-cd ..
 make
 ```
 
@@ -36,6 +35,9 @@ python3 plot_dataset.py
 
 ## Files
 
+- `src/` - Fortran source code for Mie scattering calculations
+- `Makefile` - Compilation instructions
+- `mie_data_generator/` - Python wrapper for Fortran executable
 - `mie_gamma_params.toml` - Parameter ranges (aa: 1-100, bb: 0.01-1.0)
 - `mie_gamma_params_combinations.csv` - 10,000 parameter combinations 
 - `generate.py` - Main dataset generation script

@@ -19,7 +19,7 @@ import argparse
 import logging
 
 # Add the mie_data_generator to path
-sys.path.append('../mie_data_generator')
+sys.path.append('./mie_data_generator')
 from mie_wrapper import run_mie_calculation, parse_mie_output
 
 
@@ -157,7 +157,7 @@ def parse_full_spher_output(output_file):
     }
 
 
-def process_single_calculation(row_data, executable_path="../spher_f_mono"):
+def process_single_calculation(row_data, executable_path="./spher_f_mono"):
     """
     Process a single parameter combination.
     
@@ -307,7 +307,7 @@ def main():
     parser.add_argument('--max-workers', type=int, default=4, help='Number of parallel workers')
     parser.add_argument('--start-row', type=int, default=1, help='Starting row number (1-indexed)')
     parser.add_argument('--max-rows', type=int, help='Maximum number of rows to process')
-    parser.add_argument('--executable', default='../spher_f_mono', help='Path to Mie executable')
+    parser.add_argument('--executable', default='./spher_f_mono', help='Path to Mie executable')
     
     args = parser.parse_args()
     
