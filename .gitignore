@@ -1,0 +1,21 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated datasets
+*_dataset/
+test_dataset/
+mie_dataset/
+full_mie_dataset/
+
+# Generated plots (except examples)
+plots/
+
+# Log files
+*.log
+
+# Temporary files
+temp_*
+*.tmp
